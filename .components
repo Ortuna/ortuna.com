@@ -1,0 +1,9 @@
+---
+:orm: datamapper
+:test: minitest
+:mock: none
+:script: none
+:renderer: slim
+:stylesheet: none
+:namespace: Ortuna
+:migration_format: number
