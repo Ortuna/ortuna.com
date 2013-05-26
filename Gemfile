@@ -14,7 +14,7 @@ source 'https://rubygems.org'
 gem 'rake'
 
 # Component requirements
-gem 'slim'
+gem 'haml'
 gem 'dm-sqlite-adapter'
 gem 'dm-validations'
 gem 'dm-timestamps'

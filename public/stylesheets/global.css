@@ -1,0 +1,81 @@
+/*
+  Reset
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  color: #303A44;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/*
+  CSS - Everything
+*/
+body {
+  background-color: #fff;
+  line-height: 1.25em;
+  font-family: "ff-tisa-web-pro",serif;
+  font-size:115%;
+  color:#fff;
+} 
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+h3 {
+  font-size: 1.0rem;
+  line-height: 1.0rem;
+}
+
+h4 {
+  font-size: 1.0rem;
+  line-height: 1.0rem;
+}
+
+h5 {
+  font-size: 1.0rem;
+  line-height: 1.0rem;
+}
+
+h6 {
+  font-size: 1.0rem;
+  line-height: 1.0rem;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-family: "rooney-web";
+}
+
+ul,
+ol {
+  display: block;
+  list-style-type: disc;
+  margin-left: .5em;
+}
+
+ol {
+  list-style-type: decimal;
+}

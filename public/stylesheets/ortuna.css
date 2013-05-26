@@ -1,0 +1,44 @@
+body {
+  border-top: 5px solid #5E271A;
+  background-color: #D46047;
+}
+
+h1 {
+  font-size:4.0em;
+  line-height: 1.5em;
+}
+
+header nav {
+  overflow: auto;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li.first {
+  float:left;
+  margin: 0;
+  font-weight: 600;
+}
+
+header nav ul li {
+  float:right;
+  margin-left: 20px;
+}
+
+
+
+header nav ul a,
+header nav ul a:visited,
+header nav ul a:active {
+  color: #5E271A;
+  text-decoration: none;
+}
+
+.container {
+     margin: 0 auto;
+    padding: 1.5rem 1rem;
+   position: relative;
+  max-width: 50%;
+}
