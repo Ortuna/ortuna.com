@@ -3,7 +3,7 @@ body {
   background-color: #D46047;
 }
 
-h1 {
+header h1 {
   font-size:4.0em;
   line-height: 1.5em;
 }
@@ -27,11 +27,9 @@ header nav ul li {
   margin-left: 20px;
 }
 
-
-
-header nav ul a,
-header nav ul a:visited,
-header nav ul a:active {
+a,
+a:visited,
+a:active {
   color: #5E271A;
   text-decoration: none;
 }

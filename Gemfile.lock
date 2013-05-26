@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/Ortuna/dm-gitfs-adapter.git
+  revision: b61bd4409a950aa089f9a75c328cbb48cd139e3b
+  specs:
+    dm-gitfs-adapter (1.0.0)
+      dm-core
+      dm-types
+      grit
+
+GIT
   remote: git://github.com/padrino/padrino-framework.git
   revision: 813a4e27c484abb3d2580d68a61f6edb660e02a7
   specs:
@@ -42,6 +51,7 @@ GEM
     bcrypt-ruby (3.0.1)
     data_objects (0.10.12)
       addressable (~> 2.1)
+    diff-lcs (1.2.4)
     dm-aggregates (1.2.0)
       dm-core (~> 1.2.0)
     dm-constraints (1.2.0)
@@ -71,6 +81,10 @@ GEM
     do_sqlite3 (0.10.12)
       data_objects (= 0.10.12)
     fastercsv (1.5.5)
+    grit (2.5.0)
+      diff-lcs (~> 1.1)
+      mime-types (~> 1.15)
+      posix-spawn (~> 0.3.6)
     haml (4.0.2)
       tilt
     http_router (0.11.0)
@@ -85,12 +99,14 @@ GEM
     minitest (2.6.2)
     multi_json (1.7.3)
     polyglot (0.3.3)
+    posix-spawn (0.3.6)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
     rake (10.0.4)
+    redcarpet (2.3.0)
     sinatra (1.4.2)
       rack (~> 1.5, >= 1.5.2)
       rack-protection (~> 1.4)
@@ -112,6 +128,7 @@ DEPENDENCIES
   dm-aggregates
   dm-constraints
   dm-core
+  dm-gitfs-adapter!
   dm-migrations
   dm-sqlite-adapter
   dm-timestamps
@@ -122,3 +139,4 @@ DEPENDENCIES
   padrino!
   rack-test
   rake
+  redcarpet

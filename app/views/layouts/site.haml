@@ -19,5 +19,6 @@
     %link{ :href => "/images/icon.jpg", :rel => "apple-touch-icon" }
   %body
   .container
-    .content      
+    .content
+      = render_partial 'shared/header'
       = yield if block_given?
