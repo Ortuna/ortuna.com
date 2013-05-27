@@ -10,6 +10,7 @@ header h1 {
 }
 
 header nav {
+  height: 2.0em;
   overflow: auto;
 }
 
