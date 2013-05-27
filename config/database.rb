@@ -12,4 +12,4 @@
 DataMapper.logger = logger
 DataMapper::Property::String.length(255)
 
-DataMapper.setup(:gitfs, 'gitfs::///tmp/ortuna-content?git://github.com/Ortuna/ortuna-content.git#local-only')
+DataMapper.setup(:gitfs, 'gitfs::///tmp/ortuna-content?../content#local-only')
