@@ -4,7 +4,7 @@ require 'grit'
 set :bind, '0.0.0.0'
 set :port, 9000
 
-get '/' do
+post '/' do
   Dir.chdir '../content'
   g = Grit::Repo.new('../content')
   g.git.reset({:hard => true}, 'HEAD')
