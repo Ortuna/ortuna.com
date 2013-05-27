@@ -5,7 +5,8 @@ set :bind, '0.0.0.0'
 set :port, 9000
 
 post '/' do
-
+  update_origin
+  update_tmp
 end
 
 def update_origin
