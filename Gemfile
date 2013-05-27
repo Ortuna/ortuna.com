@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'thin'
-gem 'padrino', :path => '../opensource/padrino-framework'
-# gem 'padrino', :github => 'padrino/padrino-framework'
+# gem 'padrino', :path => '../opensource/padrino-framework'
+gem 'padrino', :github => 'padrino/padrino-framework'
 gem 'rake'
 gem 'haml'
 gem 'dm-sqlite-adapter'

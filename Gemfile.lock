@@ -7,8 +7,9 @@ GIT
       dm-types
       grit
 
-PATH
-  remote: ../opensource/padrino-framework
+GIT
+  remote: git://github.com/padrino/padrino-framework.git
+  revision: 90727956a5ba096187a6bd901856465337f8d4d7
   specs:
     padrino (0.11.2)
       padrino-admin (= 0.11.2)
