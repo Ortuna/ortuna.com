@@ -12,6 +12,7 @@ header nav {
   overflow: auto;
 }
 
+ul.articles,
 header nav ul {
   list-style: none;
 }

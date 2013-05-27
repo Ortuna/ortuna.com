@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'thin'
 gem 'padrino', :github => 'padrino/padrino-framework'
 gem 'rake'
 gem 'haml'
