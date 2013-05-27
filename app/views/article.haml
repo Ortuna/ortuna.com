@@ -1,2 +1,4 @@
 %article{class: 'article'}
   != @content.html_safe
+.comments
+  = render_partial 'shared/comments'
