@@ -8,15 +8,21 @@
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1" }
     %title Ortuna.com
     = javascript_include_tag '//use.typekit.net/nko3zvy.js'
+    = javascript_include_tag 'highlight.pack.js'
 
     :javascript
       try{Typekit.load();}catch(e){}
 
     = stylesheet_link_tag 'global',  :media => 'all'
     = stylesheet_link_tag 'ortuna',  :media => 'all'
+    = stylesheet_link_tag 'default', :media => 'all'
+    = stylesheet_link_tag 'tomorrow-night-bright',  :media => 'all'
 
     %link{ :href => "/images/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon" }
     %link{ :href => "/images/icon.jpg", :rel => "apple-touch-icon" }
+    :javascript
+        hljs.tabReplace = '    ';
+        hljs.initHighlightingOnLoad();
   %body
   .container
     .content

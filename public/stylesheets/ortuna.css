@@ -41,3 +41,9 @@ a:active {
    position: relative;
   max-width: 50%;
 }
+
+code.ruby {
+  border-radius: 5px;
+  font-family: "droid-sans-mono";
+  font-size: .8em;
+}
