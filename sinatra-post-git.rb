@@ -5,20 +5,13 @@ set :bind, '0.0.0.0'
 set :port, 9000
 
 post '/' do
-  update_origin
-  update_tmp
+  current_directory = Dir.pwd
+  git_pull('/home/ortuna/content')
 end
 
-def update_origin
-  Dir.chdir '../content'
-  g = Grit::Repo.new('../content')
-  g.git.reset({:hard => true}, 'HEAD')
-  g.git.pull({}, "origin", "master")
-end
-
-def update_tmp
-  Dir.chdir '/tmp/ortuna-content'
-  g = Grit::Repo.new('/tmp/ortuna-content')
+def git_pull(path)
+  Dir.chdir path
+  g = Grit::Repo.new(path)
   g.git.reset({:hard => true}, 'HEAD')
   g.git.pull({}, "origin", "master")
 end
