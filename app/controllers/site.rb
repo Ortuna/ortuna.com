@@ -11,8 +11,12 @@ Ortuna::App.controllers do
 
   get :article, map: '/:path' do
     @article = Article.first(published: true, base_path: "#{params[:path]}.md")
-    @title   = @article[:title]
-    @content = markdown_to_html(@article[:markdown])
-    render :article
+    if @article
+      @title   = @article[:title]
+      @content = markdown_to_html(@article[:markdown])
+      render :article
+    else
+      render '404'
+    end
   end
 end
