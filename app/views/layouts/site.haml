@@ -9,6 +9,8 @@
     %title Ortuna.com
     = javascript_include_tag '//use.typekit.net/nko3zvy.js'
     = javascript_include_tag 'highlight.pack.js'
+    = javascript_include_tag 'jquery-2.0.1.min.js'
+    = javascript_include_tag 'application.js'
 
     :javascript
       try{Typekit.load();}catch(e){}
@@ -25,6 +27,7 @@
         hljs.tabReplace = '  ';
         hljs.initHighlightingOnLoad();
   %body
+  .header-image
   .container
     .content
       = render_partial 'shared/header'

@@ -30,6 +30,12 @@ header nav ul li {
   margin-left: 20px;
 }
 
+.header-image {
+  background-image: url(../images/header.jpg);
+  width:100%;
+  height:500px;
+}
+
 a,
 a:visited,
 a:active {
