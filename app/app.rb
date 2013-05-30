@@ -6,6 +6,9 @@ module Ortuna
 
     enable :sessions
     layout :site
+    
+    enable :caching
+    set :static_cache_control, [:public, max_age: 60 * 60 * 24 * 365]
 
     private
     def markdown_to_html(markdown, options = {})
