@@ -17,13 +17,13 @@ header .title {
   left: 0;
 }
 
-header .nav {
+header nav {
   position: absolute;
   line-height: 3em;
   right: 0;
 }
 
-header .nav a {
+header nav a {
   margin-left: 20px;
 }
 
@@ -61,7 +61,7 @@ ul.social li {
 }
 
 .profile {
-  position: absolute;
+  float: left;
   padding: 25px;
   text-align: center;
 }
@@ -89,10 +89,13 @@ a:active {
 }
 
 .container {
-     margin: 0 auto;
-    padding: 1.5rem 1rem;
-   position: relative;
-  max-width: 70%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  position: relative;
+  width: 70%;
+  max-width: 900px;
+
+  float:left;
 }
 
 code.ruby {
@@ -102,9 +105,21 @@ code.ruby {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+  header .title,
+  header nav {
+    float: none;
+    position: relative;
+  }
+
+  header {
+    overflow: visible;
+    height: 5em;
+    text-align: center;
+  }
+
   .container {
-    max-width:98%;
+    width:98%;
   }
 
   .profile {
