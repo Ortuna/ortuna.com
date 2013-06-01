@@ -1,5 +1,6 @@
 Ortuna::App.controllers do
   get :index do
+    @title    = 'Articles'
     @articles = Article.all(published: true, order: :date.desc)
     render :index
   end

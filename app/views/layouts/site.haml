@@ -9,8 +9,6 @@
     %title Ortuna | Sumeet Singh
     = javascript_include_tag '//use.typekit.net/nko3zvy.js'
     = javascript_include_tag 'highlight.pack.js'
-    = javascript_include_tag 'jquery-2.0.1.min.js'
-    = javascript_include_tag 'application.js'
 
     :javascript
       try{Typekit.load();}catch(e){}
@@ -26,7 +24,21 @@
         hljs.tabReplace = '  ';
         hljs.initHighlightingOnLoad();
   %body
-  .header-image
+  .profile
+    = image_tag 'me.jpeg'
+    %span Sumeet Singh
+    %ul.social
+      %li
+        %a{href: 'http://www.github.com/ortuna', target: '_blank'}
+          %span.icon.github
+      %li
+        %a{href: 'http://www.twitter.com/ortuna', target: '_blank'}
+          %span.icon.twitter
+      %li
+        %a{href: 'mailto:ortuna@gmail.com', target: '_blank'}
+          %span.icon.email
+
+    
   .container
     .content
       = render_partial 'shared/header'
