@@ -25,6 +25,7 @@ header nav {
 
 header nav a {
   margin-left: 20px;
+  border-bottom: 1px dotted #5E271A;
 }
 
 header .title h1 {
