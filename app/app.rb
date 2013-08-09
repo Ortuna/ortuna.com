@@ -3,12 +3,15 @@ module Ortuna
     register Padrino::Rendering
     register Padrino::Mailer
     register Padrino::Helpers
+    register Padrino::Pipeline
 
     enable :sessions
     layout :site
     
     enable :caching
-    set :static_cache_control, [:public, max_age: 60 * 60 * 24 * 365]
+    configure_assets do |config|
+    	config.pipeline = Padrino::Pipeline::AssetPack
+    end
 
     private
     def markdown_to_html(markdown, options = {})

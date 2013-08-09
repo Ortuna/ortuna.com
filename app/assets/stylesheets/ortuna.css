@@ -114,8 +114,9 @@ code.ruby {
   }
 
   header {
+    display: block;
     overflow: visible;
-    height: 6em;
+    height: auto;
     text-align: center;
   }
 
