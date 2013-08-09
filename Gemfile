@@ -1,9 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'thin'
-# gem 'padrino', :path => '../opensource/padrino-framework'
-gem 'padrino', :github => 'padrino/padrino-framework'
-gem 'padrino-pipeline', :path => '/Users/ortuna/Desktop/code/opensource/padrino-assets'
+gem 'padrino'
+gem 'padrino-pipeline'
 gem 'rake'
 gem 'haml'
 gem 'dm-sqlite-adapter'
@@ -15,7 +14,6 @@ gem 'dm-aggregates'
 gem 'dm-types'
 gem 'dm-core'
 gem 'redcarpet'
-gem 'pry'
 
 # Test requirements
 gem 'minitest', '~>2.6.0', :require => 'minitest/autorun', :group => 'test'

@@ -10,7 +10,7 @@ module Ortuna
     
     enable :caching
     configure_assets do |config|
-    	config.pipeline = Padrino::Pipeline::AssetPack
+    	config.pipeline = Padrino::Pipeline::Sprockets
     end
 
     private
